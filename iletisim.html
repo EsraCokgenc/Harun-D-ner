@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İletişim - Harun Bey Döner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Menü -->
+    <nav class="menu">
+
+      <a href="index.html">Anasayfa</a>
+
+      <div class="dropdown">
+        <a href="hakkimizda.html">Hakkımızda ˅</a>
+
+        <div class="dropdown-content">
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="degerlerimiz.html">Değerlerimiz</a>
+          <a href="misyon.html">Misyon</a>
+          <a href="vizyon.html">Vizyon</a>
+        </div>
+      </div>
+
+      <a href="franchise.html">Franchise</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="ik.html">İK</a>
+
+    </nav>
+
+    <!-- Sağ Alan -->
+    <div class="right-area">
+
+      <a href="menü.html" class="menu-btn">
+        <img src="images/menü.png" alt="">
+        Menü
+      </a>
+
+      <div class="lang">
+        tr | eng
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="about-section">
+
+  <div class="about-container">
+
+    <!-- SOL TARAF -->
+    <div class="about-left">
+      <p class="about-text">
+        İletişime Geç
+      </p>
+
+      <h2 class="about-title">
+        Bizimle iletişime geçin.<br>
+        Size yardımcı olmak için<br>
+        buradayız.
+      </h2>
+    </div>
+
+    <!-- SAĞ TARAF -->
+    <div class="about-right social-vertical">
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="iletisim-form">
+
+    <form>
+
+        <div class="form-group">
+            <input type="text" placeholder="İsim-Soyisim">
+        </div>
+
+         <div class="form-group">
+            <input type="email" placeholder="E-mail Adresiniz">
+        </div>
+
+        <div class="form-group">
+            <input type="tel" placeholder="Telefon Numaranız">
+        </div>
+
+        <div class="form-group">
+            <textarea placeholder="Mesaj Yaz"></textarea>
+        </div>
+
+        <button type="submit">Hemen Mesaj Gönder 🠒</button>
+
+    </form>
+
+    <!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+    
+
+</body>
+</html>

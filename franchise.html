@@ -1,0 +1,151 @@
+   <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARUN BEY DÖNER</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <!-- Menü -->
+   <nav class="menu">
+  <a href="index.html" class="active">Anasayfa</a>
+
+  <div class="dropdown">
+    <a href="hakkimizda.html">Hakkımızda ˅</a>
+
+    <div class="dropdown-content">
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="degerlerimiz.html">Değerlerimiz</a>
+        <a href="misyon.html">Misyon</a>
+        <a href="vizyon.html">Vizyon</a>
+    </div>
+  </div>
+
+  <a href="franchise.html" class="active">Franchise</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="ik.html">İK</a>
+</nav>
+
+    <!-- Sağ Alan -->
+    <div class="right-area">
+      <button class="menu-btn">
+        <img src="images/menü.png" alt="menu">
+        Menü
+      </button>
+
+      <div class="lang">
+        tr | eng
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="franchise-hero">
+
+    <img src="images/elsıkışma.jpg" alt="Franchise" class="hero-bg">
+
+    <div class="hero-text">
+        <h1>Franchise</h1>
+        <p>sistemi</p>
+    </div>
+
+</section>
+
+
+
+<section class="franchise-info">
+
+    <div class="franchise-container">
+
+        <!-- SOL TARAF -->
+        <div class="franchise-left">
+
+            <div class="franchise-title">
+                <img src="images/kebab.png" alt="Logo">
+                <h2>BİRLİKTE <BR>
+                BÜYÜYELİM.</h2>
+            </div>
+
+            <p>
+                Harun Bey markasıyla karlı bir yatırımın parçası olun.<br>
+                Türkiye'nin lezzet ağını genişletiyoruz.
+            </p>
+
+        </div>
+
+
+        <!-- SAĞ TARAF -->
+        <div class="franchise-right">
+
+            <p>
+                <b>Geleneksel tadımız,</b><br>
+                kurumsal adımız."
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!---->
+
+<section class="franchise-form">
+
+    <form>
+
+        <div class="form-group">
+            <input type="text" placeholder="İsim-Soyisim">
+        </div>
+
+         <div class="form-group">
+            <input type="email" placeholder="E-mail Adresiniz">
+        </div>
+
+        <div class="form-group">
+            <input type="tel" placeholder="Telefon Numaranız">
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Yatırım Bütçeniz">
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="İl/İlçe">
+        </div>
+
+        <div class="form-group">
+            <textarea placeholder="Mesaj Yaz"></textarea>
+        </div>
+
+        <button type="submit">Hemen Mesaj Gönder 🠒</button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>
